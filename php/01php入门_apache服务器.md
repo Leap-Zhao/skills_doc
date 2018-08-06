@@ -15,10 +15,42 @@
 
 ### mac
 - 自带php与apache2
-- 启动apache服务: sudo apachectl start
+- apache服务命令行:
+  - 启动服务器：sudo apachectl start
+  - 停止服务器：sudo apachectl stop
+  - 重启服务器: sudo apachectl restart
 - 配置文件: /etc/apache2/httpd.conf
 - 开启自带的php: 在httpd.conf中将LoadModule php5_module libexec/apache2/libphp5.so 的注释给取消掉即可
 - mac下apache的虚拟主机(Virtual hosts)配置文件与windows有所不同:  /private/etc/apache2/extra/httpd-vhosts.conf
+  - 1.修改/etc/hosts,设置域名和ip对应
+  - 2.在httpd.conf中把Include /private/etc/apache2/extra/httpd-vhosts.conf的注释取消掉
+  - 3.编辑httpd-vhosts.conf文件 vim /etc/apache/extra/httpd-vhosts.conf,内容例子如下
+  ```xml
+    <VirtualHost *:80>
+
+      ServerAdmin webmaster@xiaohua.com
+
+      DocumentRoot "/Users/yourname/Dev/xiaohua.com"
+
+      ServerName xiaohua.com
+
+      ErrorLog "/Users/yourname/Dev/xiaohua.com/error_log"
+
+      CustomLog "/Users/yourname/Dev/xiaohua.com/access_log" common
+
+      <Directory "/Users/yourname/Dev/xiaohua.com">
+
+        Options Indexes FollowSymLinks MultiViews
+
+        AllowOverride None
+
+        Require all granted
+
+      </Directory>
+
+    </VirtualHost>
+    ```
+  - 4.重启httpd服务 sudo apachectl restart
 
 ### 目标
 - 1.能够下载并使用apache服务器
