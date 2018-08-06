@@ -7,10 +7,28 @@
   - Listen 监听的ip:端口
   - DocumentRoot: web的src存放地
   - Directory
-- apache2的虚拟主机的配置文件 : conf/vhost.conf
+- apache2的虚拟主机的配置文件 : conf/vhost.conf 或者 conf/extra/httpd-vhosts.conf
   - 1.配置win下的hosts文件 
     - C:Windows\System32\drivers\etc\hosts (IP地址在前,空格,域名)
-  - 2.配置apache的配置文件 : NameVirtualHost , Include conf/vhost.conf
+  - 2.修改apache的配置文件httpd.conf : 将Include conf/vhost.conf 或 Include conf/extra/httpd-vhosts.conf的注释去掉
+  - 3.编辑http-vhost.conf文件,内容例子如下:
+  ```xml
+  <VirtualHost *:80>
+    ServerAdmin webmaster@dummy-host.example.com
+    DocumentRoot "D:\phpStudy\PHPTutorial\practice\project1"
+    <Directory "D:\phpStudy\PHPTutorial\practice\project1">
+      Options Indexes FollowSymLinks
+      AllowOverride All
+      Order allow,deny
+      Allow from all
+    </Directory>
+    ServerName www.leapzhao.com
+    ServerAlias www.leapzhao.com
+    ErrorLog "D:\phpStudy\PHPTutorial\practice\project1\error.log"
+    CustomLog "D:\phpStudy\PHPTutorial\practice\project1\access.log" common
+  </VirtualHost>
+  ```
+  - 4.重启httpd服务
   
 
 ### mac
@@ -27,27 +45,16 @@
   - 3.编辑httpd-vhosts.conf文件 vim /etc/apache/extra/httpd-vhosts.conf,内容例子如下
   ```xml
     <VirtualHost *:80>
-
       ServerAdmin webmaster@xiaohua.com
-
       DocumentRoot "/Users/yourname/Dev/xiaohua.com"
-
       ServerName xiaohua.com
-
       ErrorLog "/Users/yourname/Dev/xiaohua.com/error_log"
-
       CustomLog "/Users/yourname/Dev/xiaohua.com/access_log" common
-
       <Directory "/Users/yourname/Dev/xiaohua.com">
-
         Options Indexes FollowSymLinks MultiViews
-
         AllowOverride None
-
         Require all granted
-
       </Directory>
-
     </VirtualHost>
     ```
   - 4.重启httpd服务 sudo apachectl restart
