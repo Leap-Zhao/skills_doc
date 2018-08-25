@@ -8,3 +8,6 @@
   - vim ~/.bash_profile
   - 在最后加入 PATH=$PATH:/usr/local/mysql/bin ,之后:wq保存
   - source ~/.bash_profile
+- 5.修改密码
+  - mysql -u root -p 输入之前的临时密码,进入mysql
+  - 输入 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('1995421123'); 设置新密码
