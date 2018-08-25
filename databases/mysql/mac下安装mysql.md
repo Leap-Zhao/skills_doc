@@ -11,3 +11,4 @@
 - 5.修改密码
   - mysql -u root -p 输入之前的临时密码,进入mysql
   - 输入 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('1995421123'); 设置新密码
+- 参考: https://blog.csdn.net/catstarxcode/article/details/78940385
