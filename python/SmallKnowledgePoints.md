@@ -18,3 +18,6 @@
 
 #### 6.isinstance 与 type
 - 
+
+#### 7.%d 与 %r 的区别
+- [python中%r和%s的区别](https://blog.csdn.net/wusuopubupt/article/details/23678291)
