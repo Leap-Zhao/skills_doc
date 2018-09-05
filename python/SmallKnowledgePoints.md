@@ -12,3 +12,6 @@
 
 #### 4.python中退出程序os._exit() sys.exit() exit() quit()
 - [python之 sys.exit() os._exit() exit() quit()的简单使用](http://www.cnblogs.com/weiman3389/p/6047062.html)
+
+#### 5.python列表生成式
+- [Python列表解析配合if else](https://blog.csdn.net/zk_j1994/article/details/72809260)
