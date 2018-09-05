@@ -15,3 +15,6 @@
 
 #### 5.python列表生成式
 - [Python列表解析配合if else](https://blog.csdn.net/zk_j1994/article/details/72809260)
+
+#### 6.isinstance 与 type
+- 
