@@ -29,7 +29,6 @@
   </VirtualHost>
   ```
   - 4.重启httpd服务
-  
 
 ### mac
 - 自带php与apache2
@@ -56,7 +55,7 @@
         Require all granted
       </Directory>
     </VirtualHost>
-    ```
+  ```
   - 4.重启httpd服务 sudo apachectl restart
   - 参考: [https://jingyan.baidu.com/article/c85b7a646ad2a8003bac95f5.html](https://jingyan.baidu.com/article/c85b7a646ad2a8003bac95f5.html)
 
