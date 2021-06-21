@@ -27,6 +27,7 @@
 
 ### 1.3 常用功能
 
+- 使用Alfred 执行命令行并切换终端为item: [Mac效率神器Alfred系列教程---系统命令和终端](https://baijiahao.baidu.com/s?id=1593067284218736123&wfr=spider&for=pc)
 
 ## 2 进阶使用
 
