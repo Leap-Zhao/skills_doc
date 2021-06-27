@@ -1,0 +1,32 @@
+pycharm原本的快捷键:
+1.
+2.
+3.
+
+
+本人习惯于用一套快捷键,所以此处配置pycharm为eclipse的快捷键:
+在pycharm的setting->keymap中可以选择eclipse,但是切换后发现有一些是eclipse的,而有一些则不是
+切换后是eclipse的:
+ctrl + o
+shift + enter
+ctrl + d
+ctrl + alt + 下
+ctrl + e
+alt + 左或右
+ctrl + shift + r 按文件名查找文件
+
+
+
+切换后不是eclipse的:
+1. ctrl+shift+enter: 英文解释为Start New Line Before Current,而mac下此时是ctrl + alt + enter,点击右键add keyboard shortcut,将ctrl+shift+enter添加进去,下面会有提示Already assigned to: Complete Current Statement in Editor Action,所以要在搜索栏里找到这一项,右键remove这一个快捷键,也可以直接保存这个快捷键到Start New line,之后会提示要不要删除其它的项目设置的这个快捷键,选择删除即可.
+
+2. ctrl + m : Hide all Tool Windows
+3. ctrl + / : pycharm也是注释,但pycharm注释后自动跳到下一行
+4. ctrl + h : eclipse中为搜索文件,不知道一样不一样,先写这
+5. ctrl + alt + 上: pycharm上按了之后并不能复制当前行到上一行
+6. alt  + 上或下: 基本一样,但是pycharm下是把当前行或函数直接上下移动,而eclipse始终是移动一行
+
+
+原来就不是eclipse的:
+1. command + [ 或 win + [ : select previous tab  切换到上一个tab标签页
+2. command + ] 或 win + ] : select next tab  要换到下一个tab标签页

@@ -1,0 +1,75 @@
+[	
+
+	/*
+		sublime相关的快捷键
+	*/	
+	// 打开侧边栏
+	{ "keys": ["super+b"], "command": "toggle_side_bar" },
+
+
+	/*
+		eclipse快捷键
+	*/
+	{ "keys": ["ctrl+x"], "command": "cut" },
+	{ "keys": ["ctrl+c"], "command": "copy" },
+	{ "keys": ["ctrl+v"], "command": "paste" },
+	{ "keys": ["ctrl+z"], "command": "undo" },
+	{ "keys": ["ctrl+s"], "command": "save" },
+	{ "keys": ["ctrl+a"], "command": "select_all" },
+	// 文件内查找/替换
+	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "replace"} },
+	// 单行注释
+	{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false} },
+	// 多行注释
+	{ "keys": ["ctrl+alt+/"], "command": "toggle_comment", "args": { "block": true } },
+
+	//在当前行下插入一行
+	{ "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
+	{ "keys": ["ctrl+shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"} }, 
+	//自动提示
+	{ "keys": ["alt+/"], "command": "auto_complete" },
+	{ "keys": ["ctrl+i"], "command": "reindent" },
+	//整行上移
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	//整行下移
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	//跳转到上一个编辑处
+	{ "keys": ["alt+left"], "command": "jump_back" },
+	{ "keys": ["alt+right"], "command": "jump_forward" },
+	{ "keys": ["ctrl+alt+j"], "command": "join_lines" },  
+	// 整行删除
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	// 全局查找/替换, 在查询结果中双击跳转到匹配位置
+	{ "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+	// 光标移动到指定行s
+	{ "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	// outline 
+	{ "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	// 快速定位到选中的文字
+	{ "keys": ["ctrl+k"], "command": "find_under_expand_skip" },
+	// 这个命令默认使用的是ctrl+shift+p
+	{ "keys": ["ctrl+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	//跳转到定义，比如在某个函数上按此键，则跳转到它的定义。
+	{ "keys": ["ctrl+up"], "command": "goto_definition" },
+	//选中光标所在的变量或者函数，非常有用
+	{ "keys": ["ctrl+down"], "command": "find_under_prev" },
+	//向下复制整行
+	{ "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+	//向上复制整行
+	{ "keys": ["ctrl+alt+up"], "command": "duplicate_line" },
+	//格式化代码，当然也可以利用html+css+js prettify插件来格式化
+	{ "keys": ["ctrl+shift+f"], "command": "reindent" , "args":{"single_line": false}},
+	// 定位到对于的匹配符(譬如{})(从前面定位后面时,光标要在匹配符里面,后面到前面,则反之)
+	{ "keys": ["ctrl+shift+p"], "command": "move_to", "args": {"to": "brackets"} },
+	// 当前文件中的关键字(方便快速查找内容)
+	{ "keys": ["ctrl+alt+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "#"} },
+	// open resource
+	{ "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },  
+
+	{ "keys": ["ctrl+shift+s"], "command": "save_all" },  
+	{ "keys": ["ctrl+shift+f4"], "command": "close_all" },  
+	{ "keys": ["ctrl+shift+y"], "command": "lower_case" },  
+	{ "keys": ["ctrl+shift+x"], "command": "upper_case" }
+
+
+]
