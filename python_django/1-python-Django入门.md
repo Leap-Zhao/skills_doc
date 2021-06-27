@@ -66,6 +66,11 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
+django 启动常用命令:
+
+- 前台开启服务器 python manager.py runserver 默认8000端口,本地ip
+- 指定ip与端口 python manager.py server 0.0.0.0:9201
+
 查看项目目录结构如下:
 
 ```shell

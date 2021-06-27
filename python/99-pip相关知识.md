@@ -4,6 +4,8 @@
 
 ## 1 pip基础知识
 
+pip
+
 ## 2 pip 在项目中的使用
 
 一般python文件中都会有requirements.txt文件,中间记录此项目依赖的python第三方库.比如下面的requirements.txt
