@@ -68,8 +68,6 @@ Quit the server with CONTROL-C.
 
 查看项目目录结构如下:
 
-查看项目目录结构
-
 ```shell
 ➜  djangoweb cd djtest
 ➜  djtest ls
@@ -363,7 +361,7 @@ statics
 
 5. nginx原理
 
-  ![截屏2021-06-19上午12.52.06.png](https://i.loli.net/2021/06/19/guSPwHqO9ZWeIb2.png)
+     ![截屏2021-06-19上午12.52.06.png](https://i.loli.net/2021/06/19/guSPwHqO9ZWeIb2.png)
 
   - 浏览器准备发起请求，访问http://www.djttest.com，但需要进行域名解析
   - 优先进行本地域名解析，因为我们修改了hosts，所以解析成功，得到地址：127.0.0.1
