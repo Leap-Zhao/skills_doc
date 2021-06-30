@@ -5,6 +5,10 @@
 - tmux 使用: [http://www.ruanyifeng.com/blog/2019/10/tmux.html](http://www.ruanyifeng.com/blog/2019/10/tmux.html)
 - tmux2.1设置鼠标滚轮滚动窗口: [https://zhuanlan.zhihu.com/p/333650070](https://zhuanlan.zhihu.com/p/333650070)
 
+## mac软件-HyperSwitch
+- 官网: [https://bahoom.com/hyperswitch](https://bahoom.com/hyperswitch)
+- 说明: [https://sspai.com/post/38838](https://sspai.com/post/38838)
+
 ## movies & anime (电影&动漫)
 
 | 种类   | 名称                                                         |      |
