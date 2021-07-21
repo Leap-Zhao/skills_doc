@@ -27,7 +27,9 @@
 
 ### 1.3 常用功能
 
-- 使用Alfred 执行命令行并切换终端为item: [Mac效率神器Alfred系列教程---系统命令和终端](https://baijiahao.baidu.com/s?id=1593067284218736123&wfr=spider&for=pc)
+- 1 使用Alfred 执行命令行: 在Alfred输入框中输入前缀“>”，后面接上命令字符串 (默认是terminal,修改为Iterm查看下面这个)
+- 2 切换终端为item: [Mac效率神器Alfred系列教程---系统命令和终端](https://baijiahao.baidu.com/s?id=1593067284218736123&wfr=spider&for=pc)
+- 3 添加百度搜索: [怎样在 Alfred 快捷搜索中加入百度搜索引擎？](https://www.zhihu.com/question/20205127)
 
 ## 2 进阶使用
 
