@@ -6,6 +6,12 @@
 
 pip
 
+- pip freeze 查看环境已经安装的包及版本信息
+
+```text
+pip freeze > requirements.txt 即将整个python环境的依赖包生成到requirements.txt文件中
+```
+
 ## 2 pip 在项目中的使用
 
 一般python文件中都会有requirements.txt文件,中间记录此项目依赖的python第三方库.比如下面的requirements.txt
@@ -48,6 +54,24 @@ pip 21.1.2 from /Library/Python/3.7/site-packages/pip (python 3.7)
 # -r, --requirement <file> :Install from the given requirements file. This option can be used multiple times. 
 # -i, --index-url <url>       Base URL of Python Package Index (default http://mirrors.aliyun.com/pypi/simple/). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format.
 
+# 一般用 -r就行
+pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+
 pip install -Ur requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+
 ```
 
+如何将一个python项目中的依赖生成到requirements.txt文件中去呢?
+
+- 方法1(不推荐): 参考第一部分的 pip freeze > requirements.txt ,生成的是整个python项目的依赖,在任意位置都可以执行,不推荐使用
+- 方法2: 使用 pipreqs 命令, 使用方法: pipreqs dir_path
+
+```bash
+# 安装pipreqs
+➜  ~ pip install pipreqs
+# 进入项目后,执行 
+➜  mypro pipreqs ./
+INFO: Successfully saved requirements file in ./requirements.txt
+➜  mypro cat requirements.txt
+thrift==0.13.0
+```
