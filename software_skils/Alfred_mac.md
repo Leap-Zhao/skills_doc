@@ -31,13 +31,13 @@
 - 2 切换终端为item: [Mac效率神器Alfred系列教程---系统命令和终端](https://baijiahao.baidu.com/s?id=1593067284218736123&wfr=spider&for=pc)
 - 3 添加百度搜索: [怎样在 Alfred 快捷搜索中加入百度搜索引擎？](https://www.zhihu.com/question/20205127)
 - 4 添加有道云翻译: [Mac效率神器Alfred调用网易有道快速翻译](https://www.jianshu.com/p/a048a72f87a9)
-- 5 程序员变量翻译(基于有道云): [CodeVar --拯救你的变量 alfred workflows 多风格的编码变量](https://blog.csdn.net/shmilyxdl/article/details/53637935)
+- 5 程序员变量翻译(基于有道云): [CodeVar --拯救你的变量 alfred workflows 多风格的编码变量](https://blog.csdn.net/shmilyxdl/article/details/53637935) - 需安装nodejs
 
 参考:
-- (https://www.zhihu.com/question/24272545)[https://www.zhihu.com/question/24272545]
+- [有哪些经典且好玩的Alfred workflow?](https://www.zhihu.com/question/24272545)
 
 ## 2 进阶使用
 
-- 1 snip功能-文字拓展: (Alfred系列教程---Snippets文字扩展)[https://baijiahao.baidu.com/s?id=1592059014937693576&wfr=spider&for=pc]
-- 2 clip-制板功能: (Alfred系列教程---剪切板历史记录)[https://zhuanlan.zhihu.com/p/33515314]
+- 1 snip功能-文字拓展: [Alfred系列教程---Snippets文字扩展](https://baijiahao.baidu.com/s?id=1592059014937693576&wfr=spider&for=pc)
+- 2 clip-制板功能: [Alfred系列教程---剪切板历史记录](https://zhuanlan.zhihu.com/p/33515314)
 
